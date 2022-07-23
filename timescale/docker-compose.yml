@@ -1,0 +1,16 @@
+version: '2'
+services:
+  db:
+    container_name: pg_container
+    image: timescale/timescaledb:latest-pg14
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: data123
+      POSTGRES_DB: timescaledb
+    ports:
+      - "5432:5432"
+    volumes:
+      - /home/jaimin/TradeLibs/TradeLibs/data:/var/lib/postgresql/data/
+volumes:
+  pg_data:
