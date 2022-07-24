@@ -11,6 +11,6 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - /home/jaimin/TradeLibs/TradeLibs/data:/var/lib/postgresql/data/
+      - $PWD/../data:/var/lib/postgresql/data/
 volumes:
   pg_data:
