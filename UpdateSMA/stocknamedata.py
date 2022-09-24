@@ -1,4 +1,11 @@
 """Module contains list of all stock data"""
+
+from ast import If
+from http.client import SWITCHING_PROTOCOLS
+from nis import match
+from sys import setswitchinterval
+
+
 scriptNameList = ['20MICRONS.NS',
                   '21STCENMGM.NS',
                   '3IINFOLTD.NS',
